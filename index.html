@@ -1,11 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/1f99888007.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <div class="container">
+        <!--Navigation-->
+        <header>
+            <!--Burger menu-->
+            <nav class="mobile-nav" aria-label="mobile">
+                <a href="index.html"><img src="img/logo-gron.png" alt="Virksomhedslogo"></a>
+                <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
+            </nav>
+
+            <!--Desktop navigation-->
+            <nav class="desktop-nav" aria-label="desktop">
+                <ul>
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="#">Om</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Banner-->
+        <header class="header-img">
+            <img class="bg-billede-desktop" src="img/computer.jpg" alt="baggrundsbillede med computer">
+            <img class="bg-billede-mobil" src="img/computer-m.jpg" alt="baggrundsbillede med computer">
+            <div class="banner-tekst">
+                <h1>Styrk din profesionelle fremtoning<br> og skab et bedre brand</h1>
+                <p>Lad os hjælpe dig med rejsen!</p>
+                <a href="#">Kontakt os</a>
+            </div>
+        </header>
+
+        <!--Hovedindhold-->
+        <main>
+
+            <!--Call to actions-->
+            <section>
+                <h2>Hvad kan vi hjælpe dig med?</h2>
+                <div class="cta-1">
+                    <img src="img/branding.png" alt="">
+                    <h3>Branding</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere delectus laborum explicabo iusto
+                        porro distinctio officia totam vel dicta nihil?</p>
+                    <a href="#">Læs mere om branding</a>
+                </div>
+
+                <div class="cta-2">
+                    <img src="img/seo.png" alt="">
+                    <h3>SEO</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ab modi quaerat nesciunt veniam
+                        officia voluptas sint sed iusto dolore.</p>
+                    <a href="">Læs mere om SEO</a>
+                </div>
+                <div class="cta-3">
+                    <img src="img/internet.png" alt="">
+                    <h3>Hjemmesider</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis magni dolorum esse labore quas
+                        voluptas laborum cupiditate adipisci officiis minima.</p>
+                    <a href="#">Læs om hjemmesider</a>
+                </div>
+            </section>
+
+            <!--Tekst og billede sektion-->
+            <section>
+                <div class="tekst">
+                    <h2>Vi går hele vejen med jer!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione harum explicabo distinctio nemo
+                        voluptates veritatis hic, enim aliquid molestiae similique alias ducimus error quo velit optio
+                        quasi eum perspiciatis? Quidem?</p>
+                    <p>Dicta ea sed quisquam voluptatem non omnis excepturi fugiat incidunt cum doloremque velit
+                        consequatur veniam aliquid nemo, optio officiis ab in deleniti!</p>
+                    <p>Fuga tenetur aut saepe dolore ut natus in ducimus sequi culpa veritatis dolores porro magnam unde
+                        minima illo omnis!</p>
+                    <p>Atque alias soluta eos reiciendis, repudiandae aperiam voluptas quas deserunt neque eligendi
+                        asperiores consequatur optio ea autem quaerat mollitia? Architecto facere provident aliquid.</p>
+                    <a class="secondary-btn" href="#">Læs mere om vores processarbejde</a>
+                </div>
+                <div class="billede">
+                    <!--Tom div fordi billede indsættes i SCSS-->
+                </div>
+            </section>
+
+            <section class="kontakt-bg-img">
+                <form class="kontaktform">
+                    <h3>Kontakt os</h3>
+                    <p>Kontakt os nedenfor for et uforpligtende tilbud.</p>
+                    <div class="section-form">
+                        <label class="visually-hidden" for="navn">Navn</label>
+                        <input id="navn" type="text" placeholder="Navn" required>
+
+                        <label class="visually-hidden" for="mail">E-mail</label>
+                        <input id="mail" type="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="section-form">
+                        <label class="visually-hidden" for="telefon">Telefon</label>
+                        <input type="tel" id="telefon" placeholder="Telefon">
+
+                        <label class="visually-hidden" for="region">Vælg Region</label>
+                        <select id="region" name="select">
+                            <option value="0" selected disabled>Vælg Region</option>
+                            <option value="1">Region Syddanmark</option>
+                            <option value="2">Region Sjælland</option>
+                            <option value="3">Region Hovedstaden</option>
+                            <option value="4">Region Nordjylland</option>
+                            <option value="5">Region Midtjylland</option>
+                        </select>
+                    </div>
+                    <div class="section-form">
+                        <label class="visually-hidden" for="besked">Besked</label>
+                        <textarea id="besked" rows="8"></textarea>
+                    </div>
+                    <div class="section-form">
+                        <input type="submit" name="submit" value="Send besked">
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <section class="footer-left">
+                <h4>Info</h4>
+                <p>Banding.Co</p>
+                <p>Kassedammen 1</p>
+                <p>6755 Søby</p>
+                <p>Tlf.: <a href="tel:25456545">25 45 65 45</a></p>
+                <p>CVR: 2343 2323</p>
+            </section>
+
+            <section class="footer-right">
+                <img src="img/logo-gron.png" alt="">
+            </section>
+        </footer>
+
+        <!--Footer bund-->
+        <footer>
+            <p class="footer-bund">Banding.Co</p>
+        </footer>
+    </div>
 </body>
+
 </html>
